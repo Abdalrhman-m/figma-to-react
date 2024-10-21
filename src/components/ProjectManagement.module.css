@@ -1,0 +1,143 @@
+.container {
+    max-width: none !important;
+  }
+  
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px; /* Adjusted padding for compactness */
+  }
+  
+  .workManagement {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  background-color:#fff;
+  background-image: url('Element.png'); /* Add the background image */
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  }
+  
+  .contentSection {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px; /* Reduced gap for compactness */
+    width: 100%;
+  }
+  
+  .headlineContainer {
+    flex: 1;
+    min-width: 240px;
+  }
+  
+  .textContent {
+    font-family: Inter, sans-serif;
+    color: #212529;
+  }
+  
+  .title {
+    font-size: 2rem; /* Reduced font size for compactness */
+    font-weight: 700;
+    color: rgba(4, 56, 115, 1);
+  }
+  
+  .description {
+    font-size: 1rem; /* Adjusted font size for compactness */
+    color: rgba(4, 56, 115, 1);
+    margin-top: 10px;
+  }
+  
+  .ctaButton {
+    display: flex;
+    align-items: center;
+    background-color: rgba(79, 156, 249, 1);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px; /* Adjusted padding for a smaller button */
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ctaButton:hover {
+    background-color: rgba(79, 156, 249, 0.85);
+  }
+  
+  .iconWrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon {
+    width: 14px;
+    height: 14px;
+  }
+  
+  .imageContainer {
+    width: 600px;
+    height: 400px;
+    background-color: #8f9aa7;
+    background-size: cover;
+    margin-left: 40px;
+    color: #144ec2; /* Added margin for spacing between sections */
+  }
+  @media (max-width: 991px) {
+    .imageContainer {
+      width: 100%;
+      height: auto;
+      margin-left: 0;
+      margin-top: 30px;
+    }
+  }
+  
+  .secondaryContent {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  @media (max-width: 991px) {
+    .contentWrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  .featureImage {
+    width: 550px;
+    height: 350px; /* Adjusted size for compactness */
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .textContentSecondary {
+    font-size: 1.25rem;
+    flex: 1;
+    font-family: Inter, sans-serif;
+    color: #212529;
+  }
+  
+  .decorativeImage {
+    width: 80px; /* Size of decorative image */
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  

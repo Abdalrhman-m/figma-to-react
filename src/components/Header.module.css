@@ -1,0 +1,155 @@
+
+.header {
+  background-color: rgba(4, 56, 115, 1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 40px; /* Reduced padding to keep things tighter */
+}
+
+@media (max-width: 991px) {
+  .header {
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  white-space: nowrap;
+  font: 700 28px Inter, sans-serif;
+}
+
+.logoWrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.logoImage {
+  aspect-ratio: 1.28;
+  object-fit: contain;
+  width: 37px;
+}
+
+.logoText {
+  font-size: 1.25rem;
+}
+
+.navWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center nav items */
+  flex-grow: 1; /* Take up the remaining space between logo and buttons */
+  gap: 40px;
+}
+
+@media (max-width: 991px) {
+  .navWrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 10px;
+  }
+}
+
+.navMenu {
+  display: flex;
+  gap: 32px;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navText {
+  color: #fff;
+  font: 500 18px/1 DM Sans, sans-serif;
+}
+
+.downArrow {
+  display: flex;
+  align-items: center;
+}
+
+.arrowImage {
+  width: 9px;
+}
+
+.buttonGroup {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .buttonGroup {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
+
+.loginButton {
+  display: inline-flex;
+      align-items: center;
+      background-color: rgba(255, 228, 146, 1);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 15px 25px;
+      font-size: 1.125rem;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+}
+.loginButton:hover {
+  background-color: rgba(252, 226, 143, 0.85);
+}
+.freeTrialButton {
+  display: inline-flex;
+      align-items: center;
+      background-color: rgba(79, 156, 249, 1);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 15px 25px;
+      font-size: 1.125rem;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+}
+.freeTrialButton:hover {
+  background-color: rgba(79, 156, 249, 0.85);
+}
+
+.freeTrialText {
+  color: #fff;
+  font: 500 16px Inter, sans-serif;
+}
+
+.iconWrapper {
+  display: flex;
+}
+
+.icon {
+  width: 10px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navWrapper {
+    order: 2; /* Push the nav under the logo for mobile */
+  }
+
+  .buttonGroup {
+    order: 3; /* Buttons will be last on mobile */
+  }
+}
